@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3375F322C3D040E001E5873 /* RRChatFeaturesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F312C3D040E001E5873 /* RRChatFeaturesApp.swift */; };
+		B3375F342C3D040E001E5873 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F332C3D040E001E5873 /* ContentView.swift */; };
+		B3375F362C3D0410001E5873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3375F352C3D0410001E5873 /* Assets.xcassets */; };
+		B3375F392C3D0410001E5873 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3375F382C3D0410001E5873 /* Preview Assets.xcassets */; };
+		B3375F432C3D0410001E5873 /* RRChatFeaturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F422C3D0410001E5873 /* RRChatFeaturesTests.swift */; };
+		B3375F4D2C3D0410001E5873 /* RRChatFeaturesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F4C2C3D0410001E5873 /* RRChatFeaturesUITests.swift */; };
+		B3375F4F2C3D0410001E5873 /* RRChatFeaturesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F4E2C3D0410001E5873 /* RRChatFeaturesUITestsLaunchTests.swift */; };
+		B3375F5F2C3D046F001E5873 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F5E2C3D046F001E5873 /* ChatView.swift */; };
+		B3375F632C3D049D001E5873 /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F622C3D049D001E5873 /* MessageRow.swift */; };
+		B3375F652C3D04A8001E5873 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F642C3D04A8001E5873 /* MessageViewModel.swift */; };
+		B3375F672C3D04B1001E5873 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F662C3D04B1001E5873 /* Message.swift */; };
+		B3375F692C3D059B001E5873 /* SendMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F682C3D059B001E5873 /* SendMessageView.swift */; };
+		B3375F6B2C3D0629001E5873 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F6A2C3D0629001E5873 /* ChatViewModel.swift */; };
+		B3375F6F2C3D091E001E5873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F6E2C3D091E001E5873 /* AppDelegate.swift */; };
+		B3375F712C3D092A001E5873 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F702C3D092A001E5873 /* SceneDelegate.swift */; };
+		B3375F732C3D093B001E5873 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F722C3D093B001E5873 /* User.swift */; };
+		B3375F752C3D0944001E5873 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F742C3D0944001E5873 /* ChatRoom.swift */; };
+		B3375F772C3D095B001E5873 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F762C3D095B001E5873 /* AuthViewModel.swift */; };
+		B3375F792C3D0963001E5873 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F782C3D0963001E5873 /* UserViewModel.swift */; };
+		B3375F7B2C3D096A001E5873 /* ChatRoomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F7A2C3D096A001E5873 /* ChatRoomViewModel.swift */; };
+		B3375F7D2C3D0972001E5873 /* ThemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F7C2C3D0972001E5873 /* ThemeViewModel.swift */; };
+		B3375F7F2C3D0985001E5873 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F7E2C3D0985001E5873 /* LoginView.swift */; };
+		B3375F812C3D098D001E5873 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F802C3D098D001E5873 /* UserProfileView.swift */; };
+		B3375F832C3D0997001E5873 /* ChatRoomListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F822C3D0997001E5873 /* ChatRoomListView.swift */; };
+		B3375F852C3D09A0001E5873 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F842C3D09A0001E5873 /* SettingsView.swift */; };
+		B3375F872C3D09AF001E5873 /* UserAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F862C3D09AF001E5873 /* UserAvatarView.swift */; };
+		B3375F892C3D09B7001E5873 /* ChatRoomRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F882C3D09B7001E5873 /* ChatRoomRow.swift */; };
+		B3375F8B2C3D09C0001E5873 /* ThemePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F8A2C3D09C0001E5873 /* ThemePickerView.swift */; };
+		B3375F8E2C3D09E1001E5873 /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F8D2C3D09E1001E5873 /* WebSocketService.swift */; };
+		B3375F902C3D09EA001E5873 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F8F2C3D09EA001E5873 /* AuthService.swift */; };
+		B3375F922C3D09F1001E5873 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F912C3D09F1001E5873 /* UserService.swift */; };
+		B3375F942C3D09F8001E5873 /* ChatRoomService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F932C3D09F8001E5873 /* ChatRoomService.swift */; };
+		B3375F962C3D0A01001E5873 /* ThemeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F952C3D0A01001E5873 /* ThemeService.swift */; };
+		B3375F992C3D0A1E001E5873 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F982C3D0A1E001E5873 /* Constants.swift */; };
+		B3375F9B2C3D0A26001E5873 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F9A2C3D0A26001E5873 /* Extensions.swift */; };
+		B3375F9D2C3D0A2D001E5873 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3375F9C2C3D0A2D001E5873 /* Helpers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3375F3F2C3D0410001E5873 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3375F262C3D040E001E5873 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3375F2D2C3D040E001E5873;
+			remoteInfo = RRChatFeatures;
+		};
+		B3375F492C3D0410001E5873 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3375F262C3D040E001E5873 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3375F2D2C3D040E001E5873;
+			remoteInfo = RRChatFeatures;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B3375F2E2C3D040E001E5873 /* RRChatFeatures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRChatFeatures.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3375F312C3D040E001E5873 /* RRChatFeaturesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRChatFeaturesApp.swift; sourceTree = "<group>"; };
+		B3375F332C3D040E001E5873 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3375F352C3D0410001E5873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3375F382C3D0410001E5873 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3375F3E2C3D0410001E5873 /* RRChatFeaturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RRChatFeaturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3375F422C3D0410001E5873 /* RRChatFeaturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRChatFeaturesTests.swift; sourceTree = "<group>"; };
+		B3375F482C3D0410001E5873 /* RRChatFeaturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RRChatFeaturesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3375F4C2C3D0410001E5873 /* RRChatFeaturesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRChatFeaturesUITests.swift; sourceTree = "<group>"; };
+		B3375F4E2C3D0410001E5873 /* RRChatFeaturesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRChatFeaturesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B3375F5E2C3D046F001E5873 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		B3375F622C3D049D001E5873 /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
+		B3375F642C3D04A8001E5873 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		B3375F662C3D04B1001E5873 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B3375F682C3D059B001E5873 /* SendMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageView.swift; sourceTree = "<group>"; };
+		B3375F6A2C3D0629001E5873 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		B3375F6E2C3D091E001E5873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3375F702C3D092A001E5873 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B3375F722C3D093B001E5873 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B3375F742C3D0944001E5873 /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
+		B3375F762C3D095B001E5873 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		B3375F782C3D0963001E5873 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		B3375F7A2C3D096A001E5873 /* ChatRoomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewModel.swift; sourceTree = "<group>"; };
+		B3375F7C2C3D0972001E5873 /* ThemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewModel.swift; sourceTree = "<group>"; };
+		B3375F7E2C3D0985001E5873 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B3375F802C3D098D001E5873 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		B3375F822C3D0997001E5873 /* ChatRoomListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomListView.swift; sourceTree = "<group>"; };
+		B3375F842C3D09A0001E5873 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B3375F862C3D09AF001E5873 /* UserAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatarView.swift; sourceTree = "<group>"; };
+		B3375F882C3D09B7001E5873 /* ChatRoomRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomRow.swift; sourceTree = "<group>"; };
+		B3375F8A2C3D09C0001E5873 /* ThemePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePickerView.swift; sourceTree = "<group>"; };
+		B3375F8D2C3D09E1001E5873 /* WebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketService.swift; sourceTree = "<group>"; };
+		B3375F8F2C3D09EA001E5873 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		B3375F912C3D09F1001E5873 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		B3375F932C3D09F8001E5873 /* ChatRoomService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomService.swift; sourceTree = "<group>"; };
+		B3375F952C3D0A01001E5873 /* ThemeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeService.swift; sourceTree = "<group>"; };
+		B3375F982C3D0A1E001E5873 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B3375F9A2C3D0A26001E5873 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B3375F9C2C3D0A2D001E5873 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3375F2B2C3D040E001E5873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3375F3B2C3D0410001E5873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3375F452C3D0410001E5873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3375F252C3D040E001E5873 = {
+			isa = PBXGroup;
+			children = (
+				B3375F302C3D040E001E5873 /* RRChatFeatures */,
+				B3375F412C3D0410001E5873 /* RRChatFeaturesTests */,
+				B3375F4B2C3D0410001E5873 /* RRChatFeaturesUITests */,
+				B3375F2F2C3D040E001E5873 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3375F2F2C3D040E001E5873 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3375F2E2C3D040E001E5873 /* RRChatFeatures.app */,
+				B3375F3E2C3D0410001E5873 /* RRChatFeaturesTests.xctest */,
+				B3375F482C3D0410001E5873 /* RRChatFeaturesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3375F302C3D040E001E5873 /* RRChatFeatures */ = {
+			isa = PBXGroup;
+			children = (
+				B3375F972C3D0A13001E5873 /* Utilities */,
+				B3375F8C2C3D09D3001E5873 /* Services */,
+				B3375F5D2C3D0448001E5873 /* Views */,
+				B3375F5C2C3D042C001E5873 /* ViewModels */,
+				B3375F5B2C3D0424001E5873 /* Models */,
+				B3375F312C3D040E001E5873 /* RRChatFeaturesApp.swift */,
+				B3375F332C3D040E001E5873 /* ContentView.swift */,
+				B3375F352C3D0410001E5873 /* Assets.xcassets */,
+				B3375F372C3D0410001E5873 /* Preview Content */,
+				B3375F6E2C3D091E001E5873 /* AppDelegate.swift */,
+				B3375F702C3D092A001E5873 /* SceneDelegate.swift */,
+			);
+			path = RRChatFeatures;
+			sourceTree = "<group>";
+		};
+		B3375F372C3D0410001E5873 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B3375F382C3D0410001E5873 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3375F412C3D0410001E5873 /* RRChatFeaturesTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3375F422C3D0410001E5873 /* RRChatFeaturesTests.swift */,
+			);
+			path = RRChatFeaturesTests;
+			sourceTree = "<group>";
+		};
+		B3375F4B2C3D0410001E5873 /* RRChatFeaturesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B3375F4C2C3D0410001E5873 /* RRChatFeaturesUITests.swift */,
+				B3375F4E2C3D0410001E5873 /* RRChatFeaturesUITestsLaunchTests.swift */,
+			);
+			path = RRChatFeaturesUITests;
+			sourceTree = "<group>";
+		};
+		B3375F5B2C3D0424001E5873 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3375F662C3D04B1001E5873 /* Message.swift */,
+				B3375F722C3D093B001E5873 /* User.swift */,
+				B3375F742C3D0944001E5873 /* ChatRoom.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B3375F5C2C3D042C001E5873 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B3375F642C3D04A8001E5873 /* MessageViewModel.swift */,
+				B3375F6A2C3D0629001E5873 /* ChatViewModel.swift */,
+				B3375F762C3D095B001E5873 /* AuthViewModel.swift */,
+				B3375F782C3D0963001E5873 /* UserViewModel.swift */,
+				B3375F7A2C3D096A001E5873 /* ChatRoomViewModel.swift */,
+				B3375F7C2C3D0972001E5873 /* ThemeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B3375F5D2C3D0448001E5873 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3375F612C3D0490001E5873 /* Components */,
+				B3375F5E2C3D046F001E5873 /* ChatView.swift */,
+				B3375F7E2C3D0985001E5873 /* LoginView.swift */,
+				B3375F802C3D098D001E5873 /* UserProfileView.swift */,
+				B3375F822C3D0997001E5873 /* ChatRoomListView.swift */,
+				B3375F842C3D09A0001E5873 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B3375F612C3D0490001E5873 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B3375F622C3D049D001E5873 /* MessageRow.swift */,
+				B3375F682C3D059B001E5873 /* SendMessageView.swift */,
+				B3375F862C3D09AF001E5873 /* UserAvatarView.swift */,
+				B3375F882C3D09B7001E5873 /* ChatRoomRow.swift */,
+				B3375F8A2C3D09C0001E5873 /* ThemePickerView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B3375F8C2C3D09D3001E5873 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B3375F8D2C3D09E1001E5873 /* WebSocketService.swift */,
+				B3375F8F2C3D09EA001E5873 /* AuthService.swift */,
+				B3375F912C3D09F1001E5873 /* UserService.swift */,
+				B3375F932C3D09F8001E5873 /* ChatRoomService.swift */,
+				B3375F952C3D0A01001E5873 /* ThemeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B3375F972C3D0A13001E5873 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B3375F982C3D0A1E001E5873 /* Constants.swift */,
+				B3375F9A2C3D0A26001E5873 /* Extensions.swift */,
+				B3375F9C2C3D0A2D001E5873 /* Helpers.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3375F2D2C3D040E001E5873 /* RRChatFeatures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3375F522C3D0410001E5873 /* Build configuration list for PBXNativeTarget "RRChatFeatures" */;
+			buildPhases = (
+				B3375F2A2C3D040E001E5873 /* Sources */,
+				B3375F2B2C3D040E001E5873 /* Frameworks */,
+				B3375F2C2C3D040E001E5873 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RRChatFeatures;
+			productName = RRChatFeatures;
+			productReference = B3375F2E2C3D040E001E5873 /* RRChatFeatures.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3375F3D2C3D0410001E5873 /* RRChatFeaturesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3375F552C3D0410001E5873 /* Build configuration list for PBXNativeTarget "RRChatFeaturesTests" */;
+			buildPhases = (
+				B3375F3A2C3D0410001E5873 /* Sources */,
+				B3375F3B2C3D0410001E5873 /* Frameworks */,
+				B3375F3C2C3D0410001E5873 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3375F402C3D0410001E5873 /* PBXTargetDependency */,
+			);
+			name = RRChatFeaturesTests;
+			productName = RRChatFeaturesTests;
+			productReference = B3375F3E2C3D0410001E5873 /* RRChatFeaturesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B3375F472C3D0410001E5873 /* RRChatFeaturesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3375F582C3D0410001E5873 /* Build configuration list for PBXNativeTarget "RRChatFeaturesUITests" */;
+			buildPhases = (
+				B3375F442C3D0410001E5873 /* Sources */,
+				B3375F452C3D0410001E5873 /* Frameworks */,
+				B3375F462C3D0410001E5873 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3375F4A2C3D0410001E5873 /* PBXTargetDependency */,
+			);
+			name = RRChatFeaturesUITests;
+			productName = RRChatFeaturesUITests;
+			productReference = B3375F482C3D0410001E5873 /* RRChatFeaturesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3375F262C3D040E001E5873 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					B3375F2D2C3D040E001E5873 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					B3375F3D2C3D0410001E5873 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = B3375F2D2C3D040E001E5873;
+					};
+					B3375F472C3D0410001E5873 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = B3375F2D2C3D040E001E5873;
+					};
+				};
+			};
+			buildConfigurationList = B3375F292C3D040E001E5873 /* Build configuration list for PBXProject "RRChatFeatures" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3375F252C3D040E001E5873;
+			productRefGroup = B3375F2F2C3D040E001E5873 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3375F2D2C3D040E001E5873 /* RRChatFeatures */,
+				B3375F3D2C3D0410001E5873 /* RRChatFeaturesTests */,
+				B3375F472C3D0410001E5873 /* RRChatFeaturesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3375F2C2C3D040E001E5873 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3375F392C3D0410001E5873 /* Preview Assets.xcassets in Resources */,
+				B3375F362C3D0410001E5873 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3375F3C2C3D0410001E5873 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3375F462C3D0410001E5873 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3375F2A2C3D040E001E5873 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3375F632C3D049D001E5873 /* MessageRow.swift in Sources */,
+				B3375F8E2C3D09E1001E5873 /* WebSocketService.swift in Sources */,
+				B3375F812C3D098D001E5873 /* UserProfileView.swift in Sources */,
+				B3375F832C3D0997001E5873 /* ChatRoomListView.swift in Sources */,
+				B3375F342C3D040E001E5873 /* ContentView.swift in Sources */,
+				B3375F992C3D0A1E001E5873 /* Constants.swift in Sources */,
+				B3375F962C3D0A01001E5873 /* ThemeService.swift in Sources */,
+				B3375F6B2C3D0629001E5873 /* ChatViewModel.swift in Sources */,
+				B3375F922C3D09F1001E5873 /* UserService.swift in Sources */,
+				B3375F852C3D09A0001E5873 /* SettingsView.swift in Sources */,
+				B3375F902C3D09EA001E5873 /* AuthService.swift in Sources */,
+				B3375F6F2C3D091E001E5873 /* AppDelegate.swift in Sources */,
+				B3375F652C3D04A8001E5873 /* MessageViewModel.swift in Sources */,
+				B3375F792C3D0963001E5873 /* UserViewModel.swift in Sources */,
+				B3375F712C3D092A001E5873 /* SceneDelegate.swift in Sources */,
+				B3375F752C3D0944001E5873 /* ChatRoom.swift in Sources */,
+				B3375F672C3D04B1001E5873 /* Message.swift in Sources */,
+				B3375F5F2C3D046F001E5873 /* ChatView.swift in Sources */,
+				B3375F872C3D09AF001E5873 /* UserAvatarView.swift in Sources */,
+				B3375F942C3D09F8001E5873 /* ChatRoomService.swift in Sources */,
+				B3375F7F2C3D0985001E5873 /* LoginView.swift in Sources */,
+				B3375F322C3D040E001E5873 /* RRChatFeaturesApp.swift in Sources */,
+				B3375F8B2C3D09C0001E5873 /* ThemePickerView.swift in Sources */,
+				B3375F692C3D059B001E5873 /* SendMessageView.swift in Sources */,
+				B3375F772C3D095B001E5873 /* AuthViewModel.swift in Sources */,
+				B3375F9B2C3D0A26001E5873 /* Extensions.swift in Sources */,
+				B3375F9D2C3D0A2D001E5873 /* Helpers.swift in Sources */,
+				B3375F7B2C3D096A001E5873 /* ChatRoomViewModel.swift in Sources */,
+				B3375F892C3D09B7001E5873 /* ChatRoomRow.swift in Sources */,
+				B3375F7D2C3D0972001E5873 /* ThemeViewModel.swift in Sources */,
+				B3375F732C3D093B001E5873 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3375F3A2C3D0410001E5873 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3375F432C3D0410001E5873 /* RRChatFeaturesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3375F442C3D0410001E5873 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3375F4D2C3D0410001E5873 /* RRChatFeaturesUITests.swift in Sources */,
+				B3375F4F2C3D0410001E5873 /* RRChatFeaturesUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3375F402C3D0410001E5873 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3375F2D2C3D040E001E5873 /* RRChatFeatures */;
+			targetProxy = B3375F3F2C3D0410001E5873 /* PBXContainerItemProxy */;
+		};
+		B3375F4A2C3D0410001E5873 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3375F2D2C3D040E001E5873 /* RRChatFeatures */;
+			targetProxy = B3375F492C3D0410001E5873 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B3375F502C3D0410001E5873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3375F512C3D0410001E5873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3375F532C3D0410001E5873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RRChatFeatures/Preview Content\"";
+				DEVELOPMENT_TEAM = JDN378SX5P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.lavkush.RRChatFeatures;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3375F542C3D0410001E5873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RRChatFeatures/Preview Content\"";
+				DEVELOPMENT_TEAM = JDN378SX5P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.lavkush.RRChatFeatures;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B3375F562C3D0410001E5873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JDN378SX5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.lavkush.RRChatFeaturesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RRChatFeatures.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RRChatFeatures";
+			};
+			name = Debug;
+		};
+		B3375F572C3D0410001E5873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JDN378SX5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.lavkush.RRChatFeaturesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RRChatFeatures.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RRChatFeatures";
+			};
+			name = Release;
+		};
+		B3375F592C3D0410001E5873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JDN378SX5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.lavkush.RRChatFeaturesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RRChatFeatures;
+			};
+			name = Debug;
+		};
+		B3375F5A2C3D0410001E5873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JDN378SX5P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.lavkush.RRChatFeaturesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RRChatFeatures;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3375F292C3D040E001E5873 /* Build configuration list for PBXProject "RRChatFeatures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3375F502C3D0410001E5873 /* Debug */,
+				B3375F512C3D0410001E5873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3375F522C3D0410001E5873 /* Build configuration list for PBXNativeTarget "RRChatFeatures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3375F532C3D0410001E5873 /* Debug */,
+				B3375F542C3D0410001E5873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3375F552C3D0410001E5873 /* Build configuration list for PBXNativeTarget "RRChatFeaturesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3375F562C3D0410001E5873 /* Debug */,
+				B3375F572C3D0410001E5873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3375F582C3D0410001E5873 /* Build configuration list for PBXNativeTarget "RRChatFeaturesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3375F592C3D0410001E5873 /* Debug */,
+				B3375F5A2C3D0410001E5873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3375F262C3D040E001E5873 /* Project object */;
+}
